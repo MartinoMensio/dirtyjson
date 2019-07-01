@@ -27,4 +27,23 @@ It would be nice to run as a REST webservice, to avoid language dependency.
 
 This needs some few files / prebuilt docker image
 
-TODO
+`docker build -t martinomensio/dirtyjson-wrapper .`
+
+`docker run -dit --name dirtyjson-wrapper -p 12345:12345 martinomensio/dirtyjson-wrapper`
+
+Or from the docker hub (same command)
+
+`docker run -dit --name dirtyjson-wrapper -p 12345:12345 martinomensio/dirtyjson-wrapper`
+
+Run a request to the microservice:
+
+```bash
+curl -X POST \
+  http://localhost:12345 \
+  -H 'Content-Type: text/plain' \
+  -d '{broken:json}'
+```
+
+## Suggestion
+
+This has a bit of latency, just run the requested when you are sure your JSON is broken (e.g. in the catch/except).
