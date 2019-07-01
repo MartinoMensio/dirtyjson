@@ -27,13 +27,13 @@ It would be nice to run as a REST webservice, to avoid language dependency.
 
 This needs some few files / prebuilt docker image
 
-`docker build -t martinomensio/dirtyjson-wrapper .`
+`docker build -t martinomensio/dirtyjson .`
 
-`docker run -dit --name dirtyjson-wrapper -p 12345:12345 martinomensio/dirtyjson-wrapper`
+`docker run -dit --name dirtyjson-rest -p 12345:12345 martinomensio/dirtyjson`
 
 Or from the docker hub (same command)
 
-`docker run -dit --name dirtyjson-wrapper -p 12345:12345 martinomensio/dirtyjson-wrapper`
+`docker run -dit --name dirtyjson-rest -p 12345:12345 martinomensio/dirtyjson`
 
 Run a request to the microservice:
 
@@ -42,6 +42,13 @@ curl -X POST \
   http://localhost:12345 \
   -H 'Content-Type: text/plain' \
   -d '{broken:json}'
+```
+
+or in python:
+
+```
+import requests
+requests.post('http://localhost:12345', data='{broken:json}', headers={'content-type': 'text/plain'}).json()
 ```
 
 ## Suggestion
