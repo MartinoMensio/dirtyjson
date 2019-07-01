@@ -1,0 +1,34 @@
+{
+  "@context": "http://schema.org",
+  "@type": "ClaimReview",
+  "datePublished": "2019-02-08 18:23:22",
+  "url": "https://teyit.org/diyanet-cocuklara-zeka-gelistirici-oyuncaklar-vermeyin-aciklamasinda-bulundu-mu/",
+  "itemReviewed":
+  {
+    "@type": "CreativeWork",
+    "author":
+    {
+      "@type": "Organization",
+      "name": "Sosyal Medya",
+	"sameAs": "https://www.facebook.com/sonnoktasayfasi/photos/a.673944945978789/2319632444743356/?type=3&theater"
+    },
+    "datePublished": "02/05/2019"
+  },
+  "claimReviewed": "İDDİA: Diyanet İşleri Başkanlığı "Çocuklara Zekâ Geliştirici Oyuncaklar Vermeyin" şeklinde bir açıklama yaptı.
+
+&nbsp;",
+  "author":
+  {
+    "@type": "Organization",
+    "name": "teyit.org",
+    "sameAs": "https://teyit.org/diyanet-cocuklara-zeka-gelistirici-oyuncaklar-vermeyin-aciklamasinda-bulundu-mu/"
+  },
+  "reviewRating":
+  {
+    "@type": "Rating",
+    "ratingValue": "-1",
+    "bestRating": "-1",
+    "worstRating": "-1",
+    "alternateName" : "YANLIŞ"
+  }
+}
