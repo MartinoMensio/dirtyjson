@@ -1,0 +1,4 @@
+# create requirements.txt with pip-compile (https://github.com/jazzband/pip-tools)
+# pip install pip-tools
+# pip-compile
+PyExecJS
